@@ -1,0 +1,238 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  background-color:  #ffe1ee;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding-top: 40px;
+  padding-right: 0;
+  padding-bottom: 40px;
+  padding-left: 0;
+  background-color: #fd9ec7;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+button {
+  font-size: 20px;
+  background-color: #ff9cc7;
+  border: none;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#type-label{
+  padding-top: 12px;
+  padding-left: 8px;
+}
+
+#name-of-medication, #pill-purpose, #pill-side-effects, #pill-precautions{
+  padding-left: 8px;
+  font-size: xx-large;
+  border-radius: 5px;
+  border: 2px solid pink;
+  margin-left: 5px;
+}
+
+
+button:focus {
+  outline: none;
+}
+
+button.type-option,
+button.time-option,
+button.day-option {
+  background-color: #8fdaff;
+}
+
+button.type-option.selected,
+button.time-option.selected,
+button.day-option.selected {
+  background-color: #0079A1;
+}
+
+#add-a-medication-form {
+  overflow-y: scroll;
+}
+
+#button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.help-message {
+  position: fixed;
+  bottom: 80px;
+  right: 10px;
+  visibility: visible;
+  font-size: 20px;
+  background-color: #f2f2f2;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  width: 12%;
+}
+
+#add-medication {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; 
+  font-size: 50px; 
+  padding-top: 0px; 
+  padding-right: 0;
+  padding-bottom: 10px; 
+  padding-left: 0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.pill-tracker {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pill-tracker-content {
+  background-color: white;
+  padding-top: 20px;
+  padding-right: 0;
+  padding-bottom: 20px;
+  padding-left: 0;
+  width: 80%;
+  max-width: 500px;
+  margin-top: 80px; 
+  margin-right: auto;
+  margin-bottom: 80px;
+  margin-left: auto;
+  border-radius: 5px;
+}
+
+.pill-tracker-content label {
+  display: block;
+  margin-bottom: 10px; 
+}
+
+.complete-medications {
+  background-color: #ff0000; 
+  color: white; 
+  border: none;
+  padding-top: 5px; 
+  padding-right: 10px; 
+  padding-bottom: 5px; 
+  padding-left: 10px; 
+  font-size: 15px; 
+  cursor: pointer;
+  margin-top: 20px; 
+}
+.complete-medications:focus {
+  outline: none;
+}
+
+.remove-medications {
+  background-color: #FF7F7F; 
+  color: white; 
+  border: none;
+  padding-top: 5px; 
+  padding-right: 10px; 
+  padding-bottom: 5px; 
+  padding-left: 10px; 
+  font-size: 15px; 
+  cursor: pointer;
+  margin-top: 20px; 
+}
+
+.remove-medications:focus {
+  outline: none;
+}
+
+.remove-medications:hover {
+  background-color: #FF4D4D;
+}
+
+.modify-medications {
+  background-color: #AEDFF7;
+  color: #FFF;
+  border: none;
+  padding-top: 5px; 
+  padding-right: 10px;
+  padding-bottom: 5px; 
+  padding-left: 10px; 
+  font-size: 15px; 
+  cursor: pointer;
+  margin-top: 20px; 
+  margin-left: 10px; 
+}
+
+.modify-medications:focus {
+  outline: none;
+}
+
+.modify-medications:hover {
+  background-color: #0079A1;
+}
+.font-help-message{
+  position: fixed;
+  top: 115px;
+  left: 5px;
+  visibility: visible;
+  font-size: 20px;
+  background-color: #f2f2f2;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  width: 12%;
+}
+
+#increase-font-size {
+  position: fixed;
+  font-size: 20px;
+  background-color: #8fdaff;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  left: 0px;
+  top: 200px;
+}
+#decrease-font-size {
+  position: fixed;
+  font-size: 20px;
+  background-color: #8fdaff;
+  border-radius: 5px;
+  padding: 12px;
+  margin-right: 10px;
+  cursor: pointer;
+  left: 0px;
+  top: 260px;
+}

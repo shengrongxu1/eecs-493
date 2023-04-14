@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="website.css">
+    <title>Pill Tracker</title>
+</head>
+<body>
+    <header>
+        <h1>Pill Tracker</h1>
+        <p class="font-help-message">Increase or decrease the font size here!</p>
+        <button id="increase-font-size">+</button>
+        <button id="decrease-font-size">-</button>   
+    </header>
+    <main id="the-pill-dashboard">
+    </main>
+    <div id="button-container">
+      <button id="add-medication">+</button>   
+      <p class="help-message">Add your medicine here!</p>
+    </div>
+<!-- helpful links -->
+    <!-- https://www.w3schools.com/html/html_forms.asp -->
+    <div id="add-a-medication-form" class="pill-tracker">
+        <div class="pill-tracker-content">
+            <form id="the-medication-form">
+                <label for="name-of-medication" id = "type-label">Medication Name:</label>
+                <input type="text" id="name-of-medication" required>
+                <label id="type-label" >Type:</label>
+                <div id="type-of-medication">
+                    <button type="button" class="type-option">Pill</button>
+                    <button type="button" class="type-option">Inhaler</button>
+                    <button type="button" class="type-option">Injection</button>
+                </div>
+
+                <label id="type-label">Time:</label>
+                <div id="time-to-take-medication">
+                    <button type="button" class="time-option">After Breakfast</button>
+                    <button type="button" class="time-option">After Lunch</button>
+                    <button type="button" class="time-option">After Dinner</button>
+                </div>
+
+                <label id="type-label">Frequency:</label>
+                <div id="day-to-take-medication">
+                    <button type="button" class="day-option">Monday</button>
+                    <button type="button" class="day-option">Tuesday</button>
+                    <button type="button" class="day-option">Wednesday</button>
+                    <button type="button" class="day-option">Thursday</button>
+                    <button type="button" class="day-option">Friday</button>
+                    <button type="button" class="day-option">Saturday</button>
+                    <button type="button" class="day-option">Sunday</button>
+                </div>
+
+                <!-- vandan: add in new feature about pill info -->
+                <label for= "pill-purpose" id = "type-label">Purpose:</label>
+                <input type="text" id="pill-purpose" required>
+                <label for= "pill-side-effects" id = "type-label">Side Effects:</label>
+                <input type="text" id="pill-side-effects" required>
+                <label for= "pill-precautions" id = "type-label">Precautions:</label>
+                <input type="text" id="pill-precautions" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="website.js"></script>
+</body>
+</html>
